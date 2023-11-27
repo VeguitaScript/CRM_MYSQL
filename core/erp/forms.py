@@ -131,7 +131,7 @@ class OpComercialForm(ModelForm):
         self.fields['names'].widget.attrs['autofocus'] = True
 
     class Meta:
-        model = Client
+        model = OpComercial
         fields = '__all__'
         widgets = {
             'names': TextInput(
