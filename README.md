@@ -1,1 +1,1 @@
-# jose_alanya_admin
+# veguitascript_admin

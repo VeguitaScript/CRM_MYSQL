@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
+# import dj_database_url
 from config.db import *
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -82,10 +82,17 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-DATABASES = {
-  'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
+# DATABASES = {
+#   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+# }
 
+DATABASES = MYSQL
+
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://postgres_sublimacion_s8ko_user:zg8rJXarMv01Bf6uoDOYqWkfv8PG3h05@dpg-cli45rcig7qc73epud90-a.oregon-postgres.render.com/postgres_sublimacion_s8ko')
+# }
+ 
+ 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
